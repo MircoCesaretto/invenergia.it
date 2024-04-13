@@ -91,6 +91,20 @@ button{
     border-radius: 0;
 }
 
+
+@media screen and (max-width: 767px){
+    h2{
+        font-size:50px
+    }
+    h3{
+        font-size: 35px
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+
 /* HEADER */
 
 header.header-top {
@@ -125,11 +139,11 @@ header.header-top .row .col-12 .spinner-border {
 @media screen and (max-width: 767px) {
 
     header.header-top .row .col-12 h1 img {
-        height: 70px;
+        height: 60px;
     }
 }
 
-/* MAIN HOME PAGE */
+/* HERO */
 
 section.hero .row {
     background-image: url(../assets/img/hero-bg.jpg);
@@ -150,6 +164,21 @@ section.hero .row .col-12 .box-main-description p{
     font-size: 30px;
 }
 
+@media screen and (max-width: 767px) {
+    section.hero .row{
+        background-position: 95% 50%;
+
+    }
+    section.hero .row .col-12 .box-main-description{
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+
+    section.hero .row .col-12 .box-main-description p{
+        font-size: 20px;
+    }
+}
+
 
 /* ACTIVITIES */
 
@@ -161,11 +190,13 @@ section.activities p{
     font-size: 20px;
     text-align:justify;
     margin-top: 2rem;
+    max-width: 800px;
 }
 
 section.activities .bg-separator {
     height: 450px;
     filter: saturate(0) contrast(120%) brightness(0.87);
+    background-size: cover;
 }
 
 section.activities .bg-separator.separator-01{
@@ -176,6 +207,8 @@ section.activities .bg-separator.separator-02{
     background-image: url(../assets/img/iceland-5104370_1920.jpg);
     background-position: 50% 80%;;
 }
+
+
 
 /* FOOTER */
 
@@ -207,4 +240,12 @@ footer ::-webkit-scrollbar-thumb {
 }
 .modal-content{
     border-radius: 5px;
+}
+
+.dropzone {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
 }
