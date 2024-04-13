@@ -109,6 +109,7 @@ button{
 
 header.header-top {
     background-color: rgba(var(--bs-dark-rgb), 1);
+    backdrop-filter: grayscale(0.5) blur(1px);
     position: fixed;
     top: 0;
     z-index: 10;
