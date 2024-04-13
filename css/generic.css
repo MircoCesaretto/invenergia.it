@@ -9,16 +9,28 @@
     src: url(../assets/fonts/neogrey/Neogrey\ Regular.ttf);
     font-display: swap
 }
-
-h1 img{
-    height: 200px;
-    fill:red
+@font-face {
+    font-family: montserrat;
+    src: url(../assets/fonts/montserrat/montserrat.ttf);
+    font-display: swap
 }
+
+@font-face {
+    font-family: montserrat-italic;
+    src: url(../assets/fonts/montserrat/montserrat-italic.ttf);
+    font-display: swap
+}
+
+
 * {
     padding: 0px;
     margin: 0px;
 }
 
+
+:root{
+    --main-color: #0EA0C4;
+}
 
 h1,
 h2,
@@ -33,27 +45,34 @@ h6,
 .h5,
 .h6
  {
-    font-family: ubuntu;
+    font-family: montserrat;
     letter-spacing: 1px;
     font-weight: 500;
 }
 
-.subtitle {
-    font-family: ubuntu;
-    letter-spacing: 1px;
-    font-size: 28px;
-}
+
 
 p,
 span,
 strong,
 em {
-    font-family: poppins;
+    font-family: montserrat;
     letter-spacing: 1px;
+    font-weight: 500;
+}
+strong{
+    color: var(--main-color);
+    font-weight: 600;
 }
 
 h2 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+h3{
     font-size: 40px;
+    font-weight: 600;
 }
 h4{
     font-weight: 600;
@@ -92,10 +111,15 @@ header.header-top .row .col-12 {
     flex-direction: column;
 }
 
+h1 img{
+    height: 100px;
+}
+
 header.header-top .row .col-12 .spinner-border {
     height: 50px;
     width: 50px;
     animation-duration: 1.3s;
+    color: var(--main-color) !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -105,14 +129,62 @@ header.header-top .row .col-12 .spinner-border {
     }
 }
 
+/* MAIN HOME PAGE */
+
+section.hero .row {
+    background-image: url(../assets/img/hero-bg.jpg);
+    background-size: cover;
+}
+section.hero .row .col-12 .box-main-description{
+    background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    max-width: 767px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.3);
+}
+section.hero .row .col-12 .box-main-description p{
+    font-size: 30px;
+}
+
+
+/* ACTIVITIES */
+
+section.activities {
+  background-color: #E9E9E9;
+}
+
+section.activities p{
+    font-size: 20px;
+    text-align:justify;
+    margin-top: 2rem;
+}
+
+section.activities .bg-separator {
+    height: 450px;
+    filter: saturate(0) contrast(120%) brightness(0.87);
+}
+
+section.activities .bg-separator.separator-01{
+    background-image: url(../assets/img/ai-generated-8510615_1920.jpg);
+    background-position: 50% 57%;;
+}
+section.activities .bg-separator.separator-02{
+    background-image: url(../assets/img/iceland-5104370_1920.jpg);
+    background-position: 50% 80%;;
+}
+
 /* FOOTER */
+
+
+/* SCROLLBAR */
 
 footer ::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
-
-/* SCROLLBAR */
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: transparent;

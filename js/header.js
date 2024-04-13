@@ -6,7 +6,7 @@ const handleHeader = () => {
   header.style.transitionDelay = "0.4s";
 
   window.addEventListener('load', function () {
-    header.style.height = "100px"
+    header.style.height = "130px"
     header.style.background = "linear-gradient(rgba(var(--bs-dark-rgb), 1), rgba(var(--bs-dark-rgb), 0))"
     setTimeout(() => {
       spinner.classList.add('d-none')
@@ -16,24 +16,12 @@ const handleHeader = () => {
 
   document.addEventListener("scroll", (event) => {
     if (window.scrollY) {
-      header.style.height = "130px"
+      header.style.height = "160px"
     } else {
-      header.style.height = "100px"
+      header.style.height = "130px"
       header.style.background = "linear-gradient(rgba(var(--bs-dark-rgb), 1), rgba(var(--bs-dark-rgb), 0))"
     }
   });
 
 }
 handleHeader()
-
-
-
-
-
-
-
-
-
-
-
-
