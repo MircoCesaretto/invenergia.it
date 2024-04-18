@@ -233,6 +233,13 @@ section.activities .bg-separator.separator-02 {
     background-color: var(--main-color);
     color: white;
     padding: 10px 40px;
+    border: 2px solid  white;
+}
+
+.btn-submit:hover{
+    background-color: white ;
+    color: var(--main-color);
+    border: 2px solid  var(--main-color);
 }
 
 .note {
@@ -319,5 +326,12 @@ footer ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     color: white;
     padding: 10px 40px;
+    border: 2px solid  white;
+}
 
+
+.modal .btn:hover{
+    background-color: white ;
+    color: var(--main-color);
+    border: 2px solid  var(--main-color);
 }
