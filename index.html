@@ -9,8 +9,7 @@
     content="Società di servizi e consulenza in ambito trading, logistics, compliance e sistemi IT nel comparto energy">
   <meta property="og:locale" content="it_IT">
   <meta property="og:type" content="website">
-  <meta property="og:title"
-    content="Invenergia Srl - Home | Gas & Power">
+  <meta property="og:title" content="Invenergia Srl - Home | Gas & Power">
   <meta property="og:description"
     content="Società di servizi e consulenza in ambito trading, logistics, compliance e sistemi IT nel comparto energy">
   <meta property="og:url" content="https://www.invenergia.it/">
@@ -117,33 +116,39 @@
     <!-- contact us -->
 
     <section class="container-fluid contact-us">
-      <div class="row">
+      <div class="row justify-content-center p-4">
         <div class="col-12 mt-5">
           <h2 class="text-center mt-5">Contattaci</h2>
         </div>
-        <div class="col-12">
-          <form action="https://formsubmit.co/032ab008f733d7a9e742d7affe975d7e" method="POST" enctype="multipart/form-data">
-     
+        <div class="col-12 col-md-10 col-xl-6">
+          <form class="d-flex flex-column" action="https://formsubmit.co/032ab008f733d7a9e742d7affe975d7e" method="POST"
+            enctype="multipart/form-data">
+
             <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_autoresponse" value="pirla">
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/invenergia.it/index.html#">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://mircocesaretto.github.io/invenergia.it/">
             <input type="hidden" name="_template" value="box">
-            <input type="hidden" name="_replyto" value>
-            <div class="form-group">
-              <div class="form-row d-flex">
-                <div class="col-6">
-                  <input type="text" name="Nome&nbsp;completo&nbsp;o&nbsp;Ragione&nbsp;sociale" class="form-control" placeholder="Nome&nbsp;completo&nbsp;o&nbsp;Ragione&nbsp;sociale" required>
+            <div class="form-group my-5">
+              <div class="form-row d-flex justify-content-between flex-wrap">
+                <div class="mb-3 mb-xl-0 col-12 col-lg-5">
+                  <input type="text" name="Nome&nbsp;completo&nbsp;o&nbsp;Ragione&nbsp;sociale" class="form-control"
+                    placeholder="Nome&nbsp;completo&nbsp;o&nbsp;Ragione&nbsp;sociale" required>
                 </div>
-                <div class="col-6">
-                  <input type="email" name="Indirizzo&nbsp;Email" class="form-control" placeholder="Indirizzo&nbsp;Email" required>
+                <div class="col-12 col-lg-5">
+                  <input type="email" name="Indirizzo&nbsp;Email" class="form-control"
+                    placeholder="Indirizzo&nbsp;Email" required>
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <textarea placeholder="Inserisci qui il tuo messaggio..." class="form-control" name="Messaggio" rows="10" required></textarea>
-              <input type="file" name="Allegati" accept="image/png, image/jpeg, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document ">
+              <textarea placeholder="Inserisci qui il tuo messaggio..." class="form-control mb-3" name="Messaggio"
+                rows="10" required></textarea>
+              <input type="file" name="Allegati"
+                accept="image/png, image/jpeg, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document ">
+                <p class="note">Formati supportati:
+                   .png, .jpeg, .pdf, .doc, .docx. Max 5Mb</p>
             </div>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            <button type="submit" class="btn btn-lg align-self-center align-self-lg-end btn-submit mt-4">Invia Messaggio</button>
 
           </form>
         </div>
@@ -155,8 +160,270 @@
 
   </main>
   <!-- footer -->
-  <footer>
+  <footer class="container-fluid">
+    <div class="row justify-content-center p-5">
+      <div class="col-10 col-md-6 col-lg-4">
+        <div class="text-center text-md-start">
+          <h4 class="pb-3">
+            Invenergia S.r.l.
+          </h4>
+          <p class="d-none d-md-block">
+            Sede legale: Via Vincenzo Monti 15 – 20123 Milano <br>
 
+            Sede operativa: Via Sant’Orsola 4 – 20123 Milano<br>
+
+            E-Mail: info@invenergia.eu<br>
+
+            Rea Milano 2660281<br>
+
+            Tel. 02.99252423<br>
+
+            CF e P. IVA 12417290967<br>
+
+            PEC: invenergia@legalmail.it
+          </p>
+          <p class="d-block d-md-none">
+            Sede legale:<br> Via Vincenzo Monti 15 – 20123 Milano <br>
+
+            Sede operativa:<br> Via Sant’Orsola 4 – 20123 Milano<br>
+
+            E-Mail:<br> info@marketz.eu<br>
+
+            Rea Milano 2519229<br>
+
+            Tel. 02.99252423<br>
+
+            CF e P. IVA 10281490960<br>
+
+            PEC: marketz@legalmail.it
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-end align-items-end pt-5">
+        <p class="anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">Cookie & Privacy Policy</p>
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-dark">
+            <div class="modal-content bg-light px-3">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">COOKIES & PRIVACY POLICY</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="siteorigin-widget-tinymce textwidget">
+                  <h3 class="font-weight-5 cei font_1_5em" style="color: rgb(68, 63, 63);">Informativa Art.13 del
+                    Regolamento UE n. 2016/679</h3>
+                  <p>1.&nbsp;Titolare del trattamento e Responsabile della protezione dei dati<br>
+                    2.&nbsp;Finalità e base giuridica del trattamento<br>
+                    3.&nbsp;Categorie di dati trattati<br>
+                    4.&nbsp;Destinatari o categorie di destinatari dei dati<br>
+                    5.&nbsp;Diritti degli Interessati<br>
+                    5.1&nbsp;Deroghe all'esercizio dei diritti<br>
+                    5.2&nbsp;Modalità di esercizio dei diritti<br>
+                    6.&nbsp;Periodo di conservazione dei dati<br>
+                    7.&nbsp;Trasferimento dei dati verso paesi terzi<br>
+                    8. Tecniche o sistemi automatizzati di credit scoring</p>
+                  <hr>
+                  <h3 class="font-weight-5 cei font_1_5em" style="color: rgb(68, 63, 63);">Informativa Art.13 del
+                    Regolamento UE n. 2016/679</h3>
+                  <p><strong>1. Titolare del trattamento e Responsabile della protezione dei dati</strong><br>
+                    Il Titolare del Trattamento è Marketz Spa con sede in Corso Europa, 2 – 20122 Milano – PI<br>
+                    10281490960 - in persona del legale rappresentate pro tempore.</p>
+                  <p><strong>2. Finalità e base giuridica del trattamento</strong><br>
+                    Il Titolare tratta i dati personali di persone fisiche e/o liberi professionisti (“Interessati”)
+                    per le seguenti finalità:<br>
+                    A. necessità di eseguire un contratto di cui l’Interessato sia parte o di eseguire attività
+                    precontrattuali su sua richiesta. Tale necessità rappresenta la base giuridica che legittima i
+                    conseguenti trattamenti. Il conferimento dei dati necessari a tali fini rappresenta, a seconda
+                    dei casi, un obbligo contrattuale o un requisito necessario alla conclusione del contratto; in
+                    mancanza di essi, il titolare sarebbe nell’impossibilità di instaurare il rapporto o di dare
+                    esecuzione allo stesso;<br>
+                    B. necessità di adempiere ad obblighi legali, disposizioni impartite da Autorità di Vigilanza,
+                    dalla Magistratura, ecc.). Tale necessità rappresenta la base giuridica che legittima i
+                    conseguenti trattamenti. Il conferimento dei dati necessari a tali fini rappresenta un obbligo
+                    legale; in mancanza di essi il titolare sarebbe nell’impossibilità di instaurare rapporti e
+                    potrebbe avere l’obbligo di effettuare segnalazioni;<br>
+                    C. vendita di prodotti e servizi del titolare e di società terze. La base giuridica che
+                    legittima i conseguenti trattamenti è il consenso dell’Interessato, che è libero di dare o meno
+                    e che può, comunque, revocare in qualsiasi momento. Il conferimento dei dati necessari a tali
+                    fini non è obbligatorio ed il rifiuto di fornirli non determina alcuna conseguenza negativa,
+                    salvo l’impossibilità di ricevere comunicazioni commerciali;</p>
+                  <p><strong>3. Categorie di dati trattati</strong><br>
+                    Il titolare tratta dati personali raccolti direttamente presso l’Interessato, ovvero presso
+                    terzi, che includono, a titolo esemplificativo, dati anagrafici (es. nome, cognome, indirizzo,
+                    data e luogo di nascita), informazioni sulla situazione finanziaria (es. situazione
+                    patrimoniale, informazioni creditizie che attengono a richieste/rapporti di credito), dati
+                    relativi all’immagine (es. foto su carta d'identità) e registrazioni vocali e altri dati
+                    riconducibili alle categorie sopra indicate.<br>
+                    Il titolare non richiede e non tratta di sua iniziativa dati particolari della propria clientela
+                    (es. dati che rivelino l’origine razziale o etnica, le opinioni politiche, e le convinzioni
+                    religiose o filosofiche, l’appartenenza sindacale, i dati genetici, i dati biometrici - intesi a
+                    identificare in modo univoco una persona fisica, i dati relativi alla salute o alla vita
+                    sessuale o all’orientamento sessuale della persona). Tuttavia è possibile che essa, per dare
+                    esecuzione a specifiche richieste di servizi e operazioni inerenti il rapporto con il cliente
+                    (es. il pagamento di quote associative a partiti o sindacati, bonifici ad associazioni ecc.)
+                    debba trattare tali dati. Poiché il titolare non può intercettare o rifiutare queste richieste,
+                    la proposta di contratto non potrà essere accettata qualora l’Interessato non abbia dichiarato
+                    il proprio consenso scritto al suddetto trattamento. I dati in questione verranno trattati
+                    esclusivamente per dare esecuzione alla richiesta del cliente.</p>
+                  <p><strong>4. Destinatari o categorie di destinatari dei dati</strong><br>
+                    Possono venire a conoscenza dei dati dell’Interessato le persone fisiche e giuridiche nominate
+                    Responsabili del trattamento e le persone fisiche autorizzate al trattamento dei dati necessari
+                    allo svolgimento delle mansioni assegnategli: lavoratori dipendenti del Titolare o presso di
+                    essa distaccati, lavoratori interinali, consulenti finanziari abilitati all’offerta fuori sede,
+                    stagisti e consulenti.</p>
+                  <p>Il titolare – senza che sia necessario il consenso dell'Interessato – può comunicare i dati
+                    personali in suo possesso:<br>
+                    a quei soggetti cui tale comunicazione debba essere effettuata in adempimento a un obbligo
+                    previsto dalla legge, da un regolamento o dalla normativa comunitaria;<br>
+                    alle eventuali società appartenenti al Gruppo, ovvero controllate o collegate ai sensi dell'art.
+                    2359 C.C. (situate anche all'estero), quando tale comunicazione sia consentita in conseguenza di
+                    un provvedimento del Garante della Privacy o di una previsione di legge;<br>
+                    negli altri casi previsti dalla normativa vigente sulla protezione dei dati tra i quali, in
+                    particolare, società per conto delle quali il titolare svolge attività di intermediazione per la
+                    vendita di loro prodotti / servizi.</p>
+                  <p><strong>5. Diritti degli Interessati</strong><br>
+                    La normativa vigente sulla protezione dei dati attribuisce specifici diritti all’Interessato, il
+                    quale, per l’esercizio<br>
+                    degli stessi può rivolgersi direttamente e in qualsiasi momento al Titolare del trattamento.<br>
+                    I diritti esercitabili dall’Interessato, di seguito descritti, sono:<br>
+                    Diritto di accesso;<br>
+                    Diritto di Rettifica;<br>
+                    Diritto di cancellazione;<br>
+                    Diritto di limitazione;<br>
+                    Diritto alla portabilità;<br>
+                    Diritto di opposizione.</p>
+                  <p>Gli Interessati e le persone giuridiche, gli enti e le associazioni possono in qualsiasi
+                    momento modificare i consensi facoltativi ogni volta lo desiderano.</p>
+                  <p><strong>Diritto di accesso</strong><br>
+                    Il diritto di accesso prevede la possibilità per l'Interessato di conoscere quali dati personali
+                    a sé riferiti sono trattati dal titolare e di riceverne una copia gratuita (in caso di ulteriori
+                    copie richieste può essere addebitato un contributo basato sui costi sostenuti). Tra le
+                    informazioni fornite sono indicati le finalità del trattamento, le categorie dei dati trattati,
+                    il periodo di conservazione previsto o, se non possibile, i criteri utilizzati per definire tale
+                    periodo, nonché le garanzie applicate in caso di trasferimento dei dati verso Paesi terzi e i
+                    diritti esercitabili dall’Interessato.</p>
+                  <p><strong>Diritto di rettifica</strong><br>
+                    Il diritto di rettifica permette all’Interessato di ottenere l'aggiornamento o la rettifica dei
+                    dati inesatti o incompleti<br>
+                    che lo riguardano.</p>
+                  <p><strong>Diritto di cancellazione (c.d. “oblio”)</strong><br>
+                    Il diritto di cancellazione, o all’oblio, permette all’Interessato di ottenere la cancellazione
+                    dei propri dati personali<br>
+                    nei seguenti casi particolari:<br>
+                    i dati personali non sono più necessari per le finalità per le quali sono stati raccolti e
+                    trattati;<br>
+                    l'Interessato revoca il consenso su cui si basa il trattamento, se non sussiste un’altra base
+                    giuridica che possa altrimenti legittimarlo;<br>
+                    l'Interessato si oppone al trattamento e non sussiste alcun ulteriore motivo legittimo per
+                    procedere al trattamento effettuato dal titolare per:<br>
+                    il perseguimento di un legittimo interesse proprio o di terzi e non sussiste alcun motivo
+                    legittimo prevalente del titolare per procedere al trattamento,<br>
+                    finalità di marketing diretto, compresa la profilazione ad esso connessa;<br>
+                    i dati personali dell’Interessato sono stati trattati illecitamente.<br>
+                    Tale diritto può essere esercitato anche dopo la revoca del consenso.</p>
+                  <p><strong>Diritto di limitazione</strong><br>
+                    Il diritto di limitazione è esercitabile dall’Interessato in caso:<br>
+                    di violazione dei presupposti di liceità del trattamento, come alternativa alla cancellazione
+                    dei dati;<br>
+                    di richiesta di rettifica dei dati (in attesa della rettifica) o di opposizione al loro
+                    trattamento (in attesa della decisione del titolare).<br>
+                    Fatta salva la conservazione, è vietato ogni altro trattamento del dato di cui si chiede la
+                    limitazione.</p>
+                  <p><strong>Diritto alla portabilità</strong><br>
+                    Il diritto alla portabilità consente all'Interessato di utilizzare i propri dati in possesso dal
+                    titolare per altri scopi. Ciascun Interessato può chiedere di ricevere i dati personali a lui
+                    riferibili o chiederne il trasferimento a un altro titolare, in un formato strutturato, di uso
+                    comune e leggibile (Diritto alla portabilità).<br>
+                    In particolare, i dati che possono essere oggetto di portabilità sono i dati anagrafici (es.
+                    nome, cognome, indirizzo, data e luogo nascita, residenza), nonché un set di dati generati
+                    dall’attività transazionale che il titolare ha definito per ciascuna macro-categoria di
+                    prodotti/servizi (es. rapporti in essere o estinti, movimentazione). Tale diritto non si applica
+                    ai trattamenti non automatizzati (es. archivi o registri cartacei).</p>
+                  <p><strong>Diritto di opposizione</strong><br>
+                    Il diritto di opposizione consente all'Interessato di opporsi in qualsiasi momento, per motivi
+                    connessi esclusivamente alla sua situazione, al trattamento dei dati personali che lo
+                    riguardano.</p>
+                  <p><strong>5.1 Deroghe all'esercizio dei diritti</strong><br>
+                    La normativa sulla protezione dei dati riconosce specifiche deroghe ai diritti riconosciuti
+                    all'Interessato. Il titolare deve tuttavia continuare a trattare i dati personali
+                    dell’Interessato al verificarsi di una o più delle seguenti condizioni applicabili:<br>
+                    esecuzione a un obbligo di legge applicabile al titolare;<br>
+                    risoluzione di precontenziosi e/o contenziosi (propri o di terzi);<br>
+                    indagini/ispezioni interne e/o esterne;<br>
+                    richieste della pubblica autorità italiana e/o estera;<br>
+                    motivi di interesse pubblico rilevante;<br>
+                    esecuzione di un contratto in essere tra il titolare ed un terzo;<br>
+                    ulteriori eventuali condizioni/status bloccanti di natura tecnica individuate dal titolare.</p>
+                  <p><strong>5.2 Deroghe all'esercizio dei diritti</strong><br>
+                    Ciascun Interessato per esercitare i propri diritti potrà contattare il titolare all'indirizzo
+                    di posta elettronica privacy@pec.compagnia-energetica.it oppure presentare la richiesta per
+                    iscritto a Marketz Spa , con sede legale in Corso Europa, 2 – 20122 – Milano.</p>
+                  <p>Il termine per la risposta è di giorni 15 (quindici).<br>
+                    L'esercizio dei diritti è, in linea di principio, gratuito; il titolare, valutata la complessità
+                    dell'elaborazione della richiesta e, in caso di richieste manifestamente infondate o eccessive
+                    (anche ripetitive), si riserva il diritto di chiedere un contributo.</p>
+                  <p>Il titolare ha il diritto di chiedere ulteriori informazioni necessarie ai fini identificativi
+                    del richiedente.</p>
+                  <p><strong>6 Periodo di conservazione dei dati</strong><br>
+                    Il titolare tratta e conserva i dati personali dell’Interessato per tutta la durata del rapporto
+                    contrattuale, per l’esecuzione degli adempimenti allo stesso inerenti e conseguenti, per il
+                    rispetto degli obblighi di legge e regolamentari applicabili, nonché per finalità difensive
+                    proprie o di terzi, fino alla scadenza del periodo di conservazione dei dati. In particolare il
+                    periodo di conservazione dei dati personali dell’Interessato decorre:</p>
+                  <p>dalla disdetta o dal recesso del contratto di fornitura del servizio;<br>
+                    dalla data di chiusura dell’Utenza;</p>
+                  <p>Vige l'obbligo per il titolare di informare della richiesta di cancellazione altri titolari che
+                    trattano i dati personali di cui l’Interessato ha chiesto la cancellazione. Al termine del
+                    periodo di conservazione applicabile, i dati personali riferibili agli Interessati verranno
+                    cancellati o conservati in una forma che non consenta l’identificazione dell’Interessato, a meno
+                    che il loro ulteriore trattamento sia necessario per uno o più dei seguenti scopi:<br>
+                    risoluzione di precontenziosi e/o contenziosi avviati prima della scadenza del periodo di
+                    conservazione;<br>
+                    per dare seguito ad indagini/ispezioni da parte di funzioni di controllo interno e/o autorità
+                    esterne avviati prima della scadenza del periodo di conservazione;<br>
+                    risoluzione di precontenziosi e/o contenziosi avviati prima della scadenza del periodo di
+                    conservazione;</p>
+                  <p><strong>7. Trasferimento dei dati verso paesi terzi</strong><br>
+                    I dati personali potranno essere traferiti anche in Paesi non appartenenti all'Unione Europea o
+                    allo Spazio Economico Europeo (cd. “Paesi Terzi”) riconosciuti dalla Commissione Europea aventi
+                    un livello adeguato di protezione dei dati personali o, in caso contrario, solo se sia garantito
+                    contrattualmente da tutti i fornitori del titolare situati nel Paese Terzo un livello di
+                    protezione dei dati personali adeguato rispetto a quello dell’Unione Europea (es. tramite la
+                    sottoscrizione delle clausole contrattuali standard previste dalla Commissione Europea) e che
+                    sia sempre assicurato l’esercizio dei diritti degli Interessati.</p>
+                  <p><strong>8. Tecniche o sistemi automatizzati di credit scoring</strong><br>
+                    Al fine di valutare l'affidabilità nei pagamenti dell’Interessato, il titolare utilizza alcuni
+                    dati che la riguardano, da lui direttamente forniti o che sono ottenuti consultando alcune
+                    banche dati, anche mediante l'impiego di tecniche o sistemi automatizzati per la valutazione del
+                    merito di credito (credit scoring) assicurando il rispetto dei seguenti principi:<br>
+                    le tecniche o i sistemi automatizzati di credit scoring sono utilizzati solo per l'istruttoria
+                    di una richiesta di credito o per la gestione dei rapporti di credito instaurati;<br>
+                    i modelli o i fattori di analisi statistica, nonché gli algoritmi di calcolo dei giudizi,
+                    indicatori o punteggi sono verificati periodicamente con cadenza almeno annuale e aggiornati in
+                    funzione delle risultanze di tali verifiche. A fronte della consultazione di dati personali
+                    relativi a informazioni creditizie di tipo negativo in una o più banche dati, la richiesta di
+                    credito potrebbe non essere accolta.<br>
+                    Il conferimento dei dati personali necessari a tali finalità è obbligatorio e il relativo
+                    trattamento non può essere oggetto di opposizione da parte dell’Interessato, in quanto derivante
+                    da un obbligo di legge.</p>
+                  <p><strong>RECLAMO O SEGNALAZIONE AL GARANTE PER LA PROTEZIONE DEI DATI PERSONALI</strong><br>
+                    Ove l’Interessato ritenga di aver subito una violazione dei propri diritti può proporre reclamo
+                    o effettuare una segnalazione al Garante per la Protezione dei Dati Personali oppure presentare
+                    ricorso all’Autorità Giudiziaria. I contatti del Garante per la Protezione dei Dati Personali
+                    sono consultabili sul sito web&nbsp;www.garanteprivacy.it</p>
+                </div>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Chiudi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- footer end -->
 
