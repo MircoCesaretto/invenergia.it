@@ -33,9 +33,16 @@
   <header class="container-fluid header-top">
     <div class="row">
       <div class="col-12">
-        <a aria-label="Invenergia company logo" href="#">
+        <a id="headerTitle" aria-label="Invenergia company logo" href="#">
           <h1><img src="./assets/img/invenergia_logo.svg" alt="" srcset=""></h1>
         </a>
+
+        <h3 id="contactHeader" class="py-4 d-none text-center text-white">Grazie per averci contattato
+          <br>
+          le risponderemo al più presto!
+        </h3>
+
+
         <div id="spinnerHome" class="spinner-border text-light" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
@@ -85,7 +92,7 @@
             esigenze delle controparti.
           </p>
         </div>
-        <div data-aos="fade-up"  data-aos-duration="1000" class="col-12 bg-separator separator-01"></div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="col-12 bg-separator separator-01"></div>
         <div class="col-12 col-xl-8 my-5 p-4 p-md-5 p-md-5 d-flex flex-column align-items-center">
           <h3 class="text-center">Energy Trading</h3>
           <p class="px-3 mx-md-5 px-md-5">
@@ -95,7 +102,7 @@
               energetici</strong> quali <strong>trasporti</strong> e <strong>stoccaggi</strong>.
           </p>
         </div>
-        <div data-aos="fade-up"  data-aos-duration="1000" class="col-12 bg-separator separator-02"></div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="col-12 bg-separator separator-02"></div>
         <div class="col-12 col-xl-8 my-5 p-4 p-md-5 p-md-5 d-flex flex-column align-items-center">
           <h3 class="text-center">Mercati Ambientali</h3>
           <p class="px-3 mx-md-5 px-md-5">
@@ -121,12 +128,10 @@
           <h2 class="text-center mt-5">Contattaci</h2>
         </div>
         <div class="col-12 col-md-10 col-xl-6">
-          <form class="d-flex flex-column" action="https://formsubmit.co/032ab008f733d7a9e742d7affe975d7e" method="POST"
-            enctype="multipart/form-data">
-
+          <form id="contactForm" class="d-flex flex-column" action="https://formsubmit.co/759847f871a08477d8efef3a066966cd" method="POST" enctype="multipart/form-data">
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://mircocesaretto.github.io/invenergia.it">
+            <input type="hidden" name="_next" value="https://www.invenergia.it/">
             <input type="hidden" name="_template" value="box">
             <div class="form-group mt-5 mb-3">
               <div class="form-row d-flex justify-content-between flex-wrap">
@@ -147,8 +152,17 @@
                 accept="image/png, image/jpeg, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document ">
               <p class="note">Formati supportati:
                 .png, .jpeg, .pdf, .doc, .docx. Max 5Mb</p>
+         
             </div>
-            <button type="submit" class="btn btn-lg align-self-center align-self-lg-end btn-submit mt-4">Invia
+            <div class="form-group d-flex">
+              <input class="form-check-input me-2" type="checkbox" id="privacyCheckbox" required>
+              <label class="form-check-label" for="privacyCheckbox">
+                Acconsento al trattamento dei miei dati personali ai sensi della <a data-bs-toggle="modal"
+                  data-bs-target="#exampleModal" href="">normativa sulla privacy</a>.
+              </label>
+            </div>
+            <button disabled id="contactSubmit" type="submit"
+              class="btn btn-lg align-self-center align-self-lg-end btn-submit mt-4">Invia
               Messaggio</button>
 
           </form>
@@ -157,7 +171,7 @@
       </div>
     </section>
     <!-- contact us end -->
-
+    
     <!-- icons section -->
     <section class="container-fluid icons-container">
       <div class="row justify-content-center py-5">
@@ -223,7 +237,8 @@
           </p>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center justify-content-md-between align-items-center align-items-md-end">
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center justify-content-md-between align-items-center align-items-md-end">
         <p class="anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">Cookie & Privacy Policy</p>
         <img src="./assets/img/invenergia_logo_bianco.svg" alt="">
         <!-- Button trigger modal -->
@@ -254,7 +269,7 @@
                   <h3 class="font-weight-5 cei font_1_5em" style="color: rgb(68, 63, 63);">Informativa Art.13 del
                     Regolamento UE n. 2016/679</h3>
                   <p><strong>1. Titolare del trattamento e Responsabile della protezione dei dati</strong><br>
-                    Il Titolare del Trattamento è Marketz Spa con sede in Corso Europa, 2 – 20122 Milano – PI<br>
+                    Il Titolare del Trattamento è Invenergia Srl con sede in Corso Europa, 2 – 20122 Milano – PI<br>
                     10281490960 - in persona del legale rappresentate pro tempore.</p>
                   <p><strong>2. Finalità e base giuridica del trattamento</strong><br>
                     Il Titolare tratta i dati personali di persone fisiche e/o liberi professionisti (“Interessati”)
@@ -385,7 +400,7 @@
                   <p><strong>5.2 Deroghe all'esercizio dei diritti</strong><br>
                     Ciascun Interessato per esercitare i propri diritti potrà contattare il titolare all'indirizzo
                     di posta elettronica privacy@pec.compagnia-energetica.it oppure presentare la richiesta per
-                    iscritto a Marketz Spa , con sede legale in Corso Europa, 2 – 20122 – Milano.</p>
+                    iscritto a Invenergia Srl , con sede legale in Corso Europa, 2 – 20122 – Milano.</p>
                   <p>Il termine per la risposta è di giorni 15 (quindici).<br>
                     L'esercizio dei diritti è, in linea di principio, gratuito; il titolare, valutata la complessità
                     dell'elaborazione della richiesta e, in caso di richieste manifestamente infondate o eccessive
@@ -460,5 +475,6 @@
   AOS.init();
 </script>
 <script src="./js/header.js"></script>
+<script src="./js/form.js"></script>
 
 </html>
